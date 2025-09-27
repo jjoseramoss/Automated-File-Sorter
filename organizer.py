@@ -3,8 +3,12 @@ import shutil
 from pathlib import Path
 import itertools
 
+print("-- Automated File Sorter --")
+
+YOUR_PATH_ADDRESS = input("Share the path address you want to organize (ex: c:/Users/johnSmith/Downloads ) : ")
+
 # Path to organize
-SOURCE_FOLDER = Path('c:/Users/jr29b/Downloads')
+SOURCE_FOLDER = Path(YOUR_PATH_ADDRESS)
 
 # create destination folders if they dont exist
 # for folder in [IMAGES_FOLDER, DOCUMENTS_FOLDER, VIDEOS_FOLDER, OTHERS_FOLDERS]:
